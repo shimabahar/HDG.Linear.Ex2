@@ -8,7 +8,7 @@ global n ne dt
 %     [     0         C4T       0      E1      0]
 %     [    C5T         0       C6T     0     -E2]
 
-m = 3*n*ne + 2*ne ; 
+m = 3*n*ne + 2*ne; 
 M = zeros(m, m);
 
 M(1:n*ne, 1:n*ne) = (1/dt)*A - D1;

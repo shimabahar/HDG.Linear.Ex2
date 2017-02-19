@@ -33,11 +33,11 @@ H = zeros(n*ne, 1);
 H(1:n) = h1;
 
 %%%% calculate s(nu) %%%%
-  S = zeros(ne,1);
-  S(ne,1) = gpxR(step*dt);
+S = zeros(ne,1);
+S(ne,1) = gpxR(step*dt);
 
 %%%% calculate the right hand side vector %%%% 
-m=3*n*ne+2*ne;
+m = 3*n*ne+2*ne;
 R = zeros(m, 1);
 
 R(1:n*ne) = -G + (1/dt)*A*U0;
